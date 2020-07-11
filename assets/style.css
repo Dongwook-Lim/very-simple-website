@@ -1,0 +1,67 @@
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: powderblue;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 1px solid grey;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+ol {
+  border-right: 1px solid grey;
+  margin: 0;
+  padding-top: 30px;
+  width: 120px;
+}
+
+.article {
+  margin-right: 10px;
+  height: 100vh;
+}
+
+img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+}
+
+@media (max-width: 600px) {
+  #grid {
+    display: block;
+  }
+  ol {
+    border-right: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
+    width: auto;
+  }
+  .article {
+    padding-left: 20px;
+    margin: 0;
+    padding-right: 20px;
+  }
+  .mediaQuery {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 25px;
+  }
+}
